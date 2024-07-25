@@ -9,7 +9,7 @@ function App() {
 
     useEffect(() => {
         axios.get(`${API_URL}/employees`).then(response => setEmployees(response.data));
-        axios.get(`${API_URL}/vendors`).then(response => setEmployees(response.data));
+        axios.get(`${API_URL}/vendors`).then(response => setVendors(response.data));
 
     }, []);
 
